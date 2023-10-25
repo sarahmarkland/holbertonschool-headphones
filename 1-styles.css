@@ -10,8 +10,16 @@
 
 /* MAIN ELEMENTS */
 
+* {
+  /* box-sizing: border-box; */
+  /* margin: 0;
+  padding: 0; */
+}
+
 body {
-    width: 375px;
+  /* width: 100vw;
+  height: 100vh; */
+  min-width: 375px;
 }
 
 p {
@@ -29,7 +37,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     background: url(./images/headphones_hero_1.jpg) no-repeat center;
-    width: 100vw;
+    /* width: 100vw; */
+    background-color: #071629;
 }
 
 button {
@@ -126,6 +135,7 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 65px;
+    margin-bottom: 106px;
 }
 
 .WWD-container {
@@ -133,9 +143,9 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        padding: 5rem 0 5rem 0;
+        /* height: 100vh;
+        width: 100vw; */
+        /* padding: 5rem 0 5rem 0; */
         color: #071629;
         text-align: center;
         margin-top: 110px;
@@ -146,13 +156,19 @@ div.WWD-text {
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    margin-top: 110px;
+    /* margin-top: 110px; */
+    margin-bottom: 110px;
     font-family: SourceSansPro-Regular;
     font-style: bold;
 }
 
-.WWD h1 {
+.WWD-title {
     margin-bottom: 40px;
+}
+
+.WWD-card-1 {
+  width: 207px;
+  margin-bottom: 96px;
 }
 
 @media (min-width: 768px) {
@@ -202,8 +218,14 @@ div.WWD-text {
         text-align: center;
     }
 
+    .WWD-container {
+      height: 100vh;
+      width: 100vw;
+      padding: 5rem 0 5rem 0;
+    }
+
     .WWD-cards {
         display: flex;
-        
+        flex-wrap: wrap;
     }
 }
