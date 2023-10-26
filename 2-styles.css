@@ -137,8 +137,8 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* height: 100vh;
-        width: 100vw; */
+        /* height: 100vh;*/
+        width: 100vw;
         /* padding: 5rem 0 5rem 0; */
         color: #071629;
         text-align: center;
@@ -164,6 +164,72 @@ div.WWD-text {
   width: 207px;
   margin-bottom: 96px;
 }
+
+.results-container {
+    color: #FFF;
+    background-image: url('images/headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: SourceSansPro-Regular;
+    /*justify-content: space-between;
+    width: 100vw; */
+}
+
+.results-title {
+  padding-top: 6rem;
+  margin-bottom: 3rem;
+  font-size: 32px;
+}
+
+.results-subtitle {
+  max-width: 637px;
+  margin-top: 3rem;
+  line-height: 26px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.results-cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin: 3rem auto auto;
+  padding-bottom: 5rem;
+}
+
+
+.results-card-1 {
+  /* background: url('images/polygon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  max-width: 20%;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .shape-h1 {
+  padding-top: 1rem;
+  font-size: 46px;
+}
+
+.shape-p {
+  font-size: 14px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+} */
 
 @media (min-width: 768px) {
     /* styles to apply when viewport width is tablet or larger screen */
@@ -213,7 +279,7 @@ div.WWD-text {
     }
 
     .WWD-container {
-      height: 100vh;
+      /* height: 100vh; */
       width: 100vw;
       padding: 5rem 0 5rem 0;
     }
@@ -221,5 +287,18 @@ div.WWD-text {
     .WWD-cards {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .results-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .results-cards {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+      justify-content: center;
     }
 }
